@@ -4,14 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="pdsottawa — modern clothing, footwear and everyday fashion for men, women and kids." />
+  <meta name="theme-color" content="#78866f" />
   <title>pdsottawa | Style for Every Moment</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="announcement">Free style advice · Curated fashion · Prices checked Oct 1, 2026</div>
+  <div class="announcement">21 curated products · real retailer photo references · prices checked Oct. 1, 2026</div>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="pdsottawa home">
       <img src="assets/images/logo.png" alt="pdsottawa logo" />
@@ -25,6 +27,7 @@
       <a href="#shop" data-filter-link="shoes">Shoes</a>
     </nav>
     <div class="header-actions">
+      <a class="advice-link" href="tel:+12025550147">Style advice</a>
       <button id="searchToggle" class="icon-btn" aria-label="Search">⌕</button>
       <button id="cartButton" class="cart-btn" aria-label="Open cart">Bag <span id="cartCount">0</span></button>
     </div>
@@ -33,19 +36,18 @@
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <span class="eyebrow">New season · curated essentials</span>
+        <span class="eyebrow">pdsottawa · curated fashion store</span>
         <h1>Style that feels<br><em>effortless.</em></h1>
-        <p>Real fashion references, real retailer prices, and a clean shopping experience for every wardrobe.</p>
+        <p>A polished fashion edit for men, women and kids — with recognizable brands, direct retailer references, real product photography and USD price references.</p>
         <div class="hero-actions">
-          <a class="btn primary" href="#shop">Shop the edit</a>
-          <a class="btn ghost" href="tel:+12025550147">Style advisory</a>
+          <a class="btn primary" href="#shop">Shop the collection</a>
+          <a class="btn ghost" href="tel:+12025550147">Call style advisory</a>
         </div>
-        <div class="hero-meta"><span>12 curated picks</span><span>4 departments</span><span>USD pricing</span></div>
+        <div class="hero-meta"><span>21 curated picks</span><span>Men · Women · Kids</span><span>Real retailer links</span></div>
       </div>
-      <div class="hero-art">
-        <div class="hero-card hero-card-a"><span>MEN</span><strong>Timeless<br>essentials</strong></div>
-        <div class="hero-card hero-card-b"><span>WOMEN</span><strong>Modern<br>layers</strong></div>
-        <div class="hero-card hero-card-c"><span>KIDS</span><strong>Everyday<br>comfort</strong></div>
+      <div class="hero-identity" aria-label="pdsottawa brand identity">
+        <div class="logo-stage"><img src="assets/images/logo.png" alt="pdsottawa boutique logo"></div>
+        <div class="brand-note"><span>STYLE FOR EVERY MOMENT</span><strong>Modern wardrobe essentials,<br>shoes & statement pieces.</strong></div>
       </div>
     </section>
 
@@ -56,14 +58,21 @@
       <div><strong>Responsive Design</strong><span>Optimized for mobile and desktop</span></div>
     </section>
 
+    <section class="editorial-strip" aria-label="Store departments">
+      <a href="#shop" data-filter-link="men"><span>01</span><strong>Men</strong><small>Denim · outerwear · sneakers</small></a>
+      <a href="#shop" data-filter-link="women"><span>02</span><strong>Women</strong><small>Dresses · layers · footwear</small></a>
+      <a href="#shop" data-filter-link="kids"><span>03</span><strong>Kids</strong><small>Comfort · fleece · occasion</small></a>
+      <a href="#shop" data-filter-link="shoes"><span>04</span><strong>Shoes</strong><small>Nike lifestyle favorites</small></a>
+    </section>
+
     <section id="shop" class="shop-section">
       <div class="section-heading">
         <div><span class="eyebrow">The pdsottawa edit</span><h2>Shop the collection</h2></div>
-        <p id="resultCount">12 products</p>
+        <p id="resultCount">21 products</p>
       </div>
 
       <div id="searchBar" class="search-bar hidden">
-        <input id="searchInput" type="search" placeholder="Search products or brands…" autocomplete="off" />
+        <input id="searchInput" type="search" placeholder="Search products, brands or categories…" autocomplete="off" />
       </div>
 
       <div class="toolbar">
@@ -86,19 +95,19 @@
     </section>
 
     <section class="advisory">
-      <div><span class="eyebrow">Need help styling it?</span><h2>Your next look starts here.</h2><p>Call our style advisory line for sizing, outfit combinations and collection guidance.</p></div>
-      <div class="advisory-card"><span>STYLE ADVISORY</span><a href="tel:+12025550147">+1 (202) 555-0147</a><small>Demo number — replace with your business line before launch.</small></div>
+      <div><span class="eyebrow">Need help styling it?</span><h2>Your next look starts here.</h2><p>Call our style advisory line for sizing ideas, outfit combinations and collection guidance.</p></div>
+      <div class="advisory-card"><span>STYLE ADVISORY</span><a href="tel:+12025550147">+1 (202) 555-0147</a><small>Demo number — replace with your real business line before launch.</small></div>
     </section>
 
     <section class="disclaimer">
-      <strong>Catalog note.</strong> This is a demo storefront. Product names, trademarks, photography and quoted prices belong to their respective brands/retailers. Prices were checked on Oct. 1, 2026 and can change at any time. Product cards include a source link for verification. pdsottawa is not represented as affiliated with those retailers.
+      <strong>Catalog note.</strong> pdsottawa is presented as an independent demo storefront. Product names, trademarks and product photography belong to their respective brands/retailers. Price references were checked on Oct. 1, 2026 and can change at any time. Every product card contains a direct source link for verification.
     </section>
   </main>
 
   <footer>
-    <div class="footer-brand"><img src="assets/images/logo.png" alt=""><div><strong>pdsottawa</strong><span>Style for Every Moment.</span></div></div>
+    <div class="footer-brand"><img src="assets/images/logo.png" alt="pdsottawa logo"><div><strong>pdsottawa</strong><span>Style for Every Moment.</span></div></div>
     <div class="footer-links"><a href="#shop">Shop</a><a href="tel:+12025550147">Advisory</a><a href="#top">Back to top</a></div>
-    <p>© 2026 pdsottawa. Demo ecommerce concept.</p>
+    <p>© 2026 pdsottawa. Fashion storefront concept.</p>
   </footer>
 
   <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
