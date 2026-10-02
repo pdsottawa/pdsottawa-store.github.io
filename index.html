@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="pdsottawa — modern clothing, footwear and everyday fashion for men, women and kids." />
+  <title>pdsottawa | Style for Every Moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="announcement">Free style advice · Curated fashion · Prices checked Oct 1, 2026</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="pdsottawa home">
+      <img src="assets/images/logo.png" alt="pdsottawa logo" />
+      <span>pdsottawa</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#shop" data-filter-link="all">Shop</a>
+      <a href="#shop" data-filter-link="men">Men</a>
+      <a href="#shop" data-filter-link="women">Women</a>
+      <a href="#shop" data-filter-link="kids">Kids</a>
+      <a href="#shop" data-filter-link="shoes">Shoes</a>
+    </nav>
+    <div class="header-actions">
+      <button id="searchToggle" class="icon-btn" aria-label="Search">⌕</button>
+      <button id="cartButton" class="cart-btn" aria-label="Open cart">Bag <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">New season · curated essentials</span>
+        <h1>Style that feels<br><em>effortless.</em></h1>
+        <p>Real fashion references, real retailer prices, and a clean shopping experience for every wardrobe.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#shop">Shop the edit</a>
+          <a class="btn ghost" href="tel:+12025550147">Style advisory</a>
+        </div>
+        <div class="hero-meta"><span>12 curated picks</span><span>4 departments</span><span>USD pricing</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-card hero-card-a"><span>MEN</span><strong>Timeless<br>essentials</strong></div>
+        <div class="hero-card hero-card-b"><span>WOMEN</span><strong>Modern<br>layers</strong></div>
+        <div class="hero-card hero-card-c"><span>KIDS</span><strong>Everyday<br>comfort</strong></div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Store benefits">
+      <div><strong>Style Advisory</strong><span>Friendly help choosing a look</span></div>
+      <div><strong>Real Price References</strong><span>Retail prices checked before build</span></div>
+      <div><strong>Source Transparency</strong><span>Every item links to its retailer</span></div>
+      <div><strong>Responsive Design</strong><span>Optimized for mobile and desktop</span></div>
+    </section>
+
+    <section id="shop" class="shop-section">
+      <div class="section-heading">
+        <div><span class="eyebrow">The pdsottawa edit</span><h2>Shop the collection</h2></div>
+        <p id="resultCount">12 products</p>
+      </div>
+
+      <div id="searchBar" class="search-bar hidden">
+        <input id="searchInput" type="search" placeholder="Search products or brands…" autocomplete="off" />
+      </div>
+
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Product filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="men">Men</button>
+          <button class="filter" data-filter="women">Women</button>
+          <button class="filter" data-filter="kids">Kids</button>
+          <button class="filter" data-filter="shoes">Shoes</button>
+        </div>
+        <select id="sortSelect" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+          <option value="name">Name: A–Z</option>
+        </select>
+      </div>
+
+      <div id="productGrid" class="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="advisory">
+      <div><span class="eyebrow">Need help styling it?</span><h2>Your next look starts here.</h2><p>Call our style advisory line for sizing, outfit combinations and collection guidance.</p></div>
+      <div class="advisory-card"><span>STYLE ADVISORY</span><a href="tel:+12025550147">+1 (202) 555-0147</a><small>Demo number — replace with your business line before launch.</small></div>
+    </section>
+
+    <section class="disclaimer">
+      <strong>Catalog note.</strong> This is a demo storefront. Product names, trademarks, photography and quoted prices belong to their respective brands/retailers. Prices were checked on Oct. 1, 2026 and can change at any time. Product cards include a source link for verification. pdsottawa is not represented as affiliated with those retailers.
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="assets/images/logo.png" alt=""><div><strong>pdsottawa</strong><span>Style for Every Moment.</span></div></div>
+    <div class="footer-links"><a href="#shop">Shop</a><a href="tel:+12025550147">Advisory</a><a href="#top">Back to top</a></div>
+    <p>© 2026 pdsottawa. Demo ecommerce concept.</p>
+  </footer>
+
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-head"><div><span class="eyebrow">Your selection</span><h3>Shopping bag</h3></div><button id="closeCart" aria-label="Close cart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div><button class="btn primary wide" id="checkoutBtn">Demo checkout</button><small>This demo does not process payments.</small></div>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <dialog id="productModal" class="product-modal">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
